@@ -18,6 +18,7 @@ module.exports = function(grunt) {
   // ==========================================================================
 
   grunt.registerTask('flushredis', 'Flush a redis database.', function() {
+    grunt.log.write('Flushing the redis database');
     redis.createClient().flushdb();
   });
 };
